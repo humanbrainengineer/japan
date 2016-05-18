@@ -1,0 +1,18 @@
+1> apt-get install scim
+
+2> apt-get install scim-tables-zh        (chinese)
+
+3> apt-get install scim-tables-ja        (japanese)
+
+4> install--->apt-get install ：scim-uim,anthy,scim-skk,uim,uim-anthy,uim-skk 
+   UIM-anthy is very good!
+
+5> cd 在/etc/X11/Xsession.d 
+   nano 95xinput (following are content)
+
+/usr/bin/scim -d
+XMODIFIERS="@im=SCIM"
+export XMODIFIERS
+export GTK_IM_MODULE=scim
+
+6> reboot 
